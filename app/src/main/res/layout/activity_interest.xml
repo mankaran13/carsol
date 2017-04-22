@@ -101,6 +101,8 @@
         android:textColor="#fff"
         android:background="@color/colorAccent"
         android:text="DONE"
+        android:clickable="true"
+        android:onClick="open_home"
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:padding="10dp"/>
