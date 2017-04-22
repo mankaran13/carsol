@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qualification2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/carso"
+    tools:context="sandeep.carsol.Qualification2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#98f0f3f5"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/info_text"
+        android:textColor="#d910be07"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="enter field"
+        android:background="#d910be07"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:id="@+id/field_et"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_et"
+        android:layout_centerHorizontal="true"
+        android:background="#bf0e1d"
+        android:text="NEXT"
+        android:onClick="save_qualification"/>
+
+</RelativeLayout>

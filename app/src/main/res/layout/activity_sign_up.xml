@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/carso"
+
+    >
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+
+
+        android:gravity="center"
+        android:textColor="#963434"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_head"
+        android:textSize="25dp"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_head"
+        android:background="#bbffffff"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:id="@+id/name_et"
+        android:hint="enter name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_et"
+        android:background="#bbffffff"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:id="@+id/email_et"
+        android:hint="enter email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_et"
+        android:background="#e0faf8f8"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:id="@+id/mobil_et_et"
+        android:hint="enter mobile"
+        android:textColorHint="#000"
+        android:textColor="#000"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0fffefe"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:id="@+id/password_et"
+        android:layout_below="@id/mobil_et_et"
+        android:hint="enter password"
+        android:textColorHint="#000"
+        android:textColor="#000"
+
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/password_et"
+        android:layout_marginTop="30dp"
+        android:text="CREATE ACCOUNT"
+        android:onClick="save_data"
+        android:background="#963434"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/carso"
+    >
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN  "
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:textColor="#963434"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_head"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_head"
+        android:background="#bbffffff"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#2d2b2b"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:id="@+id/email_et"
+        android:hint="enter email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbffffff"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:padding="10dp"
+        android:id="@+id/password_et"
+        android:layout_below="@id/email_et"
+        android:hint="enter password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/password_et"
+        android:layout_marginTop="40dp"
+        android:text="Sign In"
+        android:onClick="verify_data"
+        android:background="#963434"
+        android:id="@+id/sign_in_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#963434"
+        android:layout_below="@+id/sign_in_btn"
+        android:layout_marginTop="30dp"
+        android:text="CREATE ACCOUNT"
+        android:onClick="gotosignup"
+        />
+
+
+
+
+</RelativeLayout>
