@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carso"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER CODE"
+        android:textColor="#c13f3f"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#013ffa"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rr"
+            android:id="@+id/otp_1"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rr"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:textColor="#013ffa"
+            android:id="@+id/otp_2"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rr"
+            android:inputType="number"
+            android:id="@+id/otp_3"
+            android:imeOptions="actionNext"
+            android:textColor="#013ffa"
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rr"
+            android:imeOptions="actionNext"
+            android:textColor="#013ffa"
+            android:inputType="number"
+            android:id="@+id/otp_4"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

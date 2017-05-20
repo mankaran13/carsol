@@ -60,7 +60,7 @@ public class Qualification2 extends AppCompatActivity {
 
         System.out.println(job);
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.15/save_qualification.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+Internet.ip+"/carsol/save_qualification.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

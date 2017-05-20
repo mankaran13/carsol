@@ -27,23 +27,6 @@
         android:textSize="25dp"/>
 
 
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_head"
-        android:background="#bbffffff"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="10dp"
-        android:id="@+id/name_et"
-        android:hint="enter name"
-        />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,6 +34,8 @@
         android:background="#bbffffff"
         android:textColorHint="#000"
         android:textColor="#000"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -68,8 +53,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
         android:id="@+id/mobil_et_et"
         android:hint="enter mobile"
+
         android:textColorHint="#000"
         android:textColor="#000"
 
@@ -83,6 +72,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="10dp"
+        android:inputType="textPassword"
         android:id="@+id/password_et"
         android:layout_below="@id/mobil_et_et"
         android:hint="enter password"
@@ -97,14 +87,47 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_below="@+id/password_et"
+        android:layout_below="@+id/cpassword_et"
         android:layout_marginTop="30dp"
         android:text="CREATE ACCOUNT"
         android:onClick="save_data"
         android:background="#963434"
-        />
+        android:id="@+id/button2" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbffffff"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:imeOptions="actionNext"
+        android:id="@+id/name_et"
+        android:hint="enter name"
+        android:inputType="textPersonName"
 
+        android:layout_below="@+id/text_head"
+        android:layout_alignEnd="@+id/email_et" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0fffefe"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:id="@+id/cpassword_et"
+        android:hint="re - enter password"
+        android:textColorHint="#000"
+        android:textColor="#000"
+
+        android:layout_below="@+id/password_et"
+        android:layout_alignStart="@+id/button2" />
 
 
 </RelativeLayout>

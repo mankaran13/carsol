@@ -6,11 +6,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/carsol"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Interest">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +21,18 @@
         <activity android:name=".Sign_up" />
         <activity android:name=".Qualification" />
         <activity android:name=".Qualification2" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Home_page"></activity>
+        <activity android:name=".Interest" />
+        <activity android:name=".Home_page" />
+        <activity android:name=".uni_web" />
+        <activity android:name=".forget_password" />
+        <activity android:name=".otp" />
+        <activity android:name=".reset_password" />
+        <activity android:name=".profile" />
+        <activity android:name=".feedback" />
+        <activity android:name=".Search_course" />
+        <activity android:name=".Search_uni" />
+        <activity android:name=".Comments" />
+        <activity android:name=".Course_by_qualification"></activity>
     </application>
 
 </manifest>

@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
 
         System.out.println(job);
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.15/user_signin.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+Internet.ip+"/carsol/user_signin.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 
@@ -64,6 +64,9 @@ public class Login extends AppCompatActivity {
 
                         sp.putString("user_id" , response.getString("id") );
                         sp.commit();
+
+                        Intent i = new Intent(Login.this,Home_page.class);
+                        startActivity(i);
 
 
                         Toast.makeText(Login.this , "logged in  successfully" , Toast.LENGTH_SHORT).show();
@@ -106,5 +109,13 @@ public class Login extends AppCompatActivity {
         Intent i = new Intent(Login.this , Sign_up.class);
 
         startActivity(i);
+    }
+
+    public void forget_pass(View view)
+
+    {
+      Intent i = new Intent(Login.this,forget_password.class);
+        startActivity(i);
+
     }
 }
